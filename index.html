@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jokenpô!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <header class="highContainer">
+        <h2 class="highContainer__title">Pedra, papel, tesoura!</h2>
+    </header>
+
+    <main>
+       
+        <div class="flex">
+            <section class="container playerContainer">
+           
+                <h3 class="containerTitle">Escolha uma opção:</h3>
+                <div id="bttns-list" class="bttnsContainer">
+                    <button id="pedraBttn" class="bttnsStyle bttnsStyle--player">
+                        Pedra
+                    </button>
+                    <button id="papelBttn" class="bttnsStyle bttnsStyle--player">
+                        Papel
+                    </button>
+                    <button id="tesouraBttn" class="bttnsStyle
+                    bttnsStyle--player">
+                        Tesoura
+                    </button>
+                </div>
+    
+            </section>
+    
+            <section class="container pcContainer">
+    
+                <h3 class="containerTitle">O computador escolheu:</h3>
+                <div id="pcChoice" class="pc"></div>
+                
+                
+            </section>
+        </div>
+        
+
+        <div id=result class="container container--result"></div>
+
+        <div id="containerReset" class="hidden">
+            
+            <button id = "resetBtn" class="bttnsStyle bttnsStyle--reset">Jogar novamente <i class="fas fa-redo-alt"></i></button>
+        </div>
+      
+    </main>
+    <footer class="lowContainer">
+        <small class="lowContainer__title">Por: <a href="#">Luan Ferreira</a></small>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
